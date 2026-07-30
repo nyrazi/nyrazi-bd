@@ -1,0 +1,7 @@
+name = "bd-nyrazi"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "products-db" # Name of your D1 database
+database_id = "da0de29e-e554-4e3a-99da-ade6c9dd4909"
