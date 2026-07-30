@@ -1,8 +1,10 @@
 name = "bd-nyrazi"
-
 compatibility_date = "2026-07-30"
+
+[assets]
+directory = "."
 
 [[d1_databases]]
 binding = "DB"
-database_name = "products-db" # Name of your D1 database
+database_name = "products-db"
 database_id = "da0de29e-e554-4e3a-99da-ade6c9dd4909"
