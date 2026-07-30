@@ -1,0 +1,25 @@
+---
+import Counter from "../components/Counter";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Store</title>
+  </head>
+
+  <body class="min-h-screen bg-slate-100">
+    <main class="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-6 text-center">
+      <h1 class="mb-4 text-5xl font-bold text-slate-900">
+        Welcome to My Store
+      </h1>
+
+      <p class="mb-8 max-w-xl text-lg text-slate-600">
+        Test working 🚀
+      </p>
+
+      <Counter client:load />
+    </main>
+  </body>
+</html>
