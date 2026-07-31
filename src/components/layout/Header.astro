@@ -1,0 +1,51 @@
+---
+import Container from "@/components/ui/Container.astro";
+import SearchBar from "./SearchBar";
+import Logo from "./Logo.astro";
+
+import {
+    HeartIcon,
+    ShoppingCartIcon,
+    UserIcon,
+} from "@heroicons/react/24/outline";
+---
+
+<header class="sticky top-0 z-50 border-b bg-white">
+
+    <Container>
+
+        <div class="flex h-20 items-center">
+
+            <Logo />
+
+            <SearchBar client:load />
+
+            <div class="flex items-center gap-4">
+
+                <button>
+                    <HeartIcon className="h-6 w-6" />
+                </button>
+
+                <button class="relative">
+
+                    <ShoppingCartIcon className="h-6 w-6" />
+
+                    <span
+                        class="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-xs text-white"
+                    >
+                        2
+                    </span>
+
+                </button>
+
+                <button>
+                    <UserIcon className="h-6 w-6" />
+                </button>
+
+            </div>
+
+        </div>
+
+    </Container>
+
+</header>

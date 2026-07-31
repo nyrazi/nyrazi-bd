@@ -1,0 +1,35 @@
+---
+import Container from "@/components/ui/Container.astro";
+import Card from "@/components/product/Card.astro";
+import { products } from "@/data/products";
+---
+
+<section class="py-20">
+
+    <Container>
+
+        <div class="mb-12">
+
+            <h1 class="text-5xl font-bold">
+                Shop
+            </h1>
+
+            <p class="mt-3 text-slate-500">
+                Browse all available products.
+            </p>
+
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+            {
+                products.map(product => (
+                    <Card product={product}/>
+                ))
+            }
+
+        </div>
+
+    </Container>
+
+</section>

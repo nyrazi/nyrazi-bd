@@ -1,0 +1,46 @@
+---
+import Container from "@/components/ui/Container.astro";
+import Card from "@/components/product/Card.astro";
+import { products } from "@/data/products";
+---
+
+<section class="bg-slate-50 py-24">
+
+  <Container>
+
+    <div class="mb-12 flex items-end justify-between">
+
+      <div>
+
+        <p class="font-semibold text-blue-600">
+          FEATURED PRODUCTS
+        </p>
+
+        <h2 class="mt-2 text-4xl font-bold">
+          Best Sellers
+        </h2>
+
+      </div>
+
+      <a
+        href="/products"
+        class="font-semibold text-blue-600 hover:underline"
+      >
+        View All →
+      </a>
+
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+      {
+        products.map((product) => (
+          <Card product={product} />
+        ))
+      }
+
+    </div>
+
+  </Container>
+
+</section>
